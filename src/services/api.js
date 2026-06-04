@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://team-task-manager-backend-production-7314.up.railway.app/api';
 
 let jwtToken = localStorage.getItem('token') || '';
 
