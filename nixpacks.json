@@ -1,6 +1,20 @@
 {
   "providers": ["node"],
   "nodejs": {
-    "version": "20"
+    "version": "20.19.0"
+  },
+  "phases": {
+    "setup": {
+      "nixPkgs": ["nodejs_20"]
+    },
+    "install": {
+      "cmds": ["npm install"]
+    },
+    "build": {
+      "cmds": ["npm run build"]
+    }
+  },
+  "start": {
+    "cmd": "npm run preview"
   }
 }
