@@ -5,6 +5,7 @@ buildCommand = "npm install && npm run build"
 [build.env]
 NODE_VERSION = "20.19.0"
 NPM_CONFIG_ENGINE_STRICT = "false"
+VITE_API_URL = "https://team-task-manager-backend-production-7314.up.railway.app/api"
 
 [deploy]
 startCommand = "npm run preview"
